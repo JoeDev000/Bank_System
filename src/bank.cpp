@@ -6,8 +6,8 @@
 #include <cmath>
 using namespace std;
 
-const string filename_clients = ".\\datafiles\\clients.txt";
-const string filename_users = ".\\datafiles\\users.txt";
+const string filename_clients = "..\\datafiles\\clients.txt";
+const string filename_users = "..\\datafiles\\users.txt";
 
 struct stClientInfo{
   string accountNumber, name, pinCode, phoneNumber;
