@@ -130,18 +130,6 @@ Permissions: -1 (Full Access)
 - **Withdraw**: Remove funds (with balance validation)
 - **Total Balances**: View system-wide balance summary
 
-## 📊 Data Format
-
-### Client Data Structure
-```
-AccountNumber#//#PinCode#//#Name#//#PhoneNumber#//#Balance
-```
-
-### User Data Structure
-```
-Username#//#Password#//#Permissions
-```
-
 ## 🔒 Security Considerations
 
 ### Current Security Features
@@ -169,22 +157,14 @@ I'm currently developing an **Object-Oriented Programming** version of this syst
 
 #### 🎨 Enhanced Features
 - **Modern C++ Design** with classes and objects
-- **Database Integration** (SQLite/MySQL support)
 - **Advanced Security** with password hashing and encryption
 - **Multi-threading** support for concurrent operations
-- **GUI Interface** using Qt or similar framework
-- **API Integration** for external banking services
+- **Better CLI Interface** Focus on the CLI and inhance it
 - **Advanced Reporting** with transaction history
 - **Backup and Recovery** mechanisms
 - **Configuration Management** system
 - **Logging and Auditing** capabilities
-
-#### 🏗️ Architecture Improvements
-- **MVC Pattern** implementation
-- **Design Patterns** (Factory, Observer, Strategy)
-- **Exception Handling** with custom exception classes
-- **Memory Management** optimization
-- **Performance Enhancements** with indexing and caching
+- **More Features** adding More Featurs to the system
 
 ## 🤝 Contributing
 
