@@ -68,14 +68,21 @@ Bit 6: Manage Users
 
 ```
 banking-system/
-├── src/
-│   └── bank.cpp                 # Main application file
+├── ATM/
+│   ├── exe/
+│   │   └── atm.exe           # ATM system executable
+│   └── src/
+│       └── atm.cpp           # ATM customer interface
 ├── datafiles/
-│   ├── clients.txt              # Client data storage
-│   └── users.txt                # User credentials storage
+│   ├── clients.txt           # Client data storage
+│   ├── clients_SAMPLE.txt    # Sample client data
+│   └── users.txt             # User credentials storage
 ├── exe/
-│   └── (compiled executable)
-└── README.md
+│   └── bank.exe              # Administrative system executable
+├── src/
+│   └── bank.cpp              # Main administrative application
+├── README.md
+└── Technical_Code_Explaination.md
 ```
 
 ## 🔧 Installation & Setup
@@ -89,24 +96,63 @@ banking-system/
 #### Windows (PowerShell)
 ```powershell
 g++ src\bank.cpp -o exe\bank.exe
+g++ ATM\src\atm.cpp -o ATM\exe\atm.exe
 ```
 
 #### Linux/MacOS
 ```bash
+# Bank
 g++ src/bank.cpp -o exe/bank
+# ATM
+g++ ATM/src/bank.cpp -o ATM/exe/bank
 ```
 
 ### Running the Application
 
 #### Windows
 ```powershell
+# Bank
 exe\bank.exe
+# ATM
+exe\ATM\atm.exe
 ```
 
 #### Linux/MacOS
 ```bash
+# Bank
 ./exe/bank
+# ATM
+./ATM/exe/atm
 ```
+---
+
+### 🏦 What's New in v1.1 - ATM System
+NEW: Customer ATM Interface
+
+- Quick Withdraw: Predefined withdrawal amounts (20, 50, 100, 200, 400, 600, 800, 1000)
+- Normal Withdraw: Custom withdrawal amounts (multiples of 5)
+- Deposit Funds: Add money to your account with confirmation
+- Balance Inquiry: Check current account balance
+- Secure Login: Account number and PIN code authentication
+- Transaction Confirmations: Security prompts for all financial operations
+- Input Validation: Ensures proper transaction amounts and formats
+
+---
+
+- Quick Withdraw Menu: 8 predefined withdrawal amounts for fast transactions
+- Normal Withdraw: Custom withdrawal amounts with validation (multiples of 5)
+- Deposit Operation: Add funds with amount validation and confirmation
+- Balance Check: View current account balance with personalized greeting
+- Secure Authentication: Account number and PIN verification
+- Transaction Confirmations: "Are you sure?" prompts for all financial operations
+- Input Validation: Ensures withdrawal/deposit amounts are multiples of 5
+- Insufficient Funds Protection: Prevents overdrafts with clear error messages
+- Session Management: Secure login/logout with option to switch accounts
+
+- ✅ **NEW**: ATM customer interface
+- ✅ **NEW**: Customer self-service operations
+- ✅ **NEW**: Quick withdraw functionality
+- ✅ **NEW**: Deposit and balance inquiry
 
 ## 🎯 Usage Guide
 
