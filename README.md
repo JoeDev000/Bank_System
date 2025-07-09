@@ -2,6 +2,14 @@
 
 A comprehensive console-based banking system built in C++ using **Functional Programming** paradigm. This system provides complete bank operations including user authentication, client management, and transaction processing.
 
+## Start Using The System
+- you will be asked a username and password
+```bash
+username: Admin
+password: 1234
+```
+- they live at datafiles>users.txt
+
 ## 🚀 Features
 
 ### 👥 User Management
